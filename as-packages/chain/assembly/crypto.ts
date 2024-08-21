@@ -55,19 +55,19 @@ class Checksum implements Packer {
 }
 
 export class Checksum160 extends Checksum {
-    override getSize(): usize {
+    getSize(): usize {
         return 20;
     }
 }
 
 export class Checksum256 extends Checksum {
-    override getSize(): usize {
+    getSize(): usize {
         return 32;
     }
 }
 
 export class Checksum512 extends Checksum {
-    override getSize(): usize {
+    getSize(): usize {
         return 64;
     }
 }
