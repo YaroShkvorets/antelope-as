@@ -15,11 +15,10 @@ declare function packer(_?: any): any
 declare function optional(_?: any): any
 declare function binaryextension(_?: any): any
 
-declare module 'asm-chain' {
-    import main = require('asm-chain/assembly/index');
+declare module '@pinax/antelope-as' {
+    import main = require('@pinax/antelope-as/assembly/index');
     export = main;
 }
-
 // ABI helpers
 declare const singleton = "singleton"
 declare const nocodegen = "nocodegen";
